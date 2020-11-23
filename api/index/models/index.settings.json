@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "indices",
+  "info": {
+    "name": "Index"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "mainImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "headlineText": {
+      "type": "text"
+    },
+    "headlineTitle": {
+      "type": "string"
+    }
+  }
+}
